@@ -1,0 +1,93 @@
+.contenedor /*padre*/
+{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 7fr 1fr;
+    grid-template-areas: "cabecera cabecera cabecera" 
+                         "menu     menu     menu"
+                         "contenido contenido publicidad"
+                         "  pie        pie       pie"
+    ;
+    
+
+    
+}
+.contenedor>div
+{
+    background-color: chartreuse;
+    
+}
+.contenedor .cabecera
+{
+    background-color: yellow;
+    grid-column: cabecera;
+
+    
+}
+.contenedor .menu
+{
+    background-color:coral;
+    grid-column: menu;
+
+    
+}
+.contenedor .contenido
+{
+    background-color:azure;
+    grid-column: contenido;  
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10fr 10fr;
+    grid-template-areas: "uno dos";
+    
+}
+.contenedor .publicidad
+{
+    background-color:darkgray;
+    grid-column: publicidad;  
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 10fr 10fr;
+    grid-template-areas: "tres"
+                         "cuatro";
+}
+.contenedor .pie
+{
+    background-color:goldenrod;
+    grid-column: pie;  
+}
+.contenido>div
+{
+    background-color:brown;
+    margin: 10px;
+      
+}
+.contenido .uno
+{
+    background-color: aquamarine;
+    grid-column: uno;
+      
+}
+
+.contenido .dos
+{
+    background-color: aquamarine;
+    grid-column: dos;
+      
+}
+
+
+
+.publicidad>div
+{
+    background-color:brown;
+    margin: 10px;
+      
+}
